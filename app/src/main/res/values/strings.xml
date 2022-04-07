@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Billigtlager</string>
-    <string name="Email">info@billigtlager.dk</string>
+    <string name="Email" translatable="false">info@billigtlager.dk</string>
     <string name="Besked">Besked</string>
     <string name="Emne">Emne</string>
     <string name="Navn">Navn</string>
@@ -11,6 +11,7 @@
     /* hints */
     <string name="BeskedEmne">Besked emne</string>
     <string name="EmailHint">navn@eksempel.dk</string>
+    <string name="NummerHint" translatable="false">+45 12 34 56 78*</string>
 
 
 </resources>

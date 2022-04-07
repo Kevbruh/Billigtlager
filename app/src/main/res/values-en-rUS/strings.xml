@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Billigtlager</string>
+    <string name="Besked">Message</string>
+    <string name="Emne">Subject</string>
+    <string name="Navn">Name</string>
+    <string name="Telefon">Phone number</string>
+    <string name="Telefontider">Telephone hours</string>
+    <string name="TelefontiderÅbent">Monday-Sunday 8am to 8pm</string>
+    <string name="BeskedEmne">Message subject</string>
+    <string name="EmailHint">name@example.com</string>
+</resources>

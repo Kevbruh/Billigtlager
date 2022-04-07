@@ -89,7 +89,7 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
-                android:hint="+45 12 34 56 78*"
+                android:hint="@string/NummerHint"
                 android:padding="10dp" />
 
             <TextView
