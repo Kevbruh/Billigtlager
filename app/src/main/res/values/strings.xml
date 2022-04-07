@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Billigtlager</string>
+    <string name="Email">info@billigtlager.dk</string>
+    <string name="Besked">Besked</string>
+    <string name="Emne">Emne</string>
+    <string name="Navn">Navn</string>
+    <string name="Telefon">Telefon</string>
+    <string name="Telefontider">Telefontider</string>
+
+    /* hints */
+    <string name="BeskedEmne">Besked emne</string>
+    <string name="EmailHint">navn@eksempel.dk</string>
+
+
 </resources>
