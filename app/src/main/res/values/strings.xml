@@ -6,6 +6,7 @@
     <string name="Navn">Navn</string>
     <string name="Telefon">Telefon</string>
     <string name="Telefontider">Telefontider</string>
+    <string name="TelefontiderÅbent">Mandag-Søndag: 8:00-20:00</string>
 
     /* hints */
     <string name="BeskedEmne">Besked emne</string>

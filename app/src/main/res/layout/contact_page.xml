@@ -36,6 +36,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:text="@string/TelefontiderÅbent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
                 android:text="@string/Navn" />
 
             <EditText
@@ -92,6 +99,7 @@
                 android:padding="10dp"
                 android:text="@string/Emne" />
 
+
             <EditText
                 android:id="@+id/ET_subject"
                 android:layout_width="match_parent"
@@ -101,7 +109,6 @@
                 android:background="@drawable/bg_round"
                 android:hint="@string/BeskedEmne"
                 android:padding="10dp" />
-
 
             <TextView
                 android:layout_width="wrap_content"
