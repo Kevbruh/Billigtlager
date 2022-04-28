@@ -6,13 +6,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="67dp">
-
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="67dp">
 
 
         <LinearLayout
@@ -138,16 +136,18 @@
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/FAB_dial"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/phone_symbol"
-                app:layout_constraintBottom_toBottomOf="parent"
-               />
+
         </LinearLayout>
 
 
-</ScrollView>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FAB_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_gravity="end|bottom"
+        android:background="@color/white"/>
 
 </LinearLayout>

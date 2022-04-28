@@ -31,7 +31,7 @@
         android:layout_width="341dp"
         android:layout_height="342dp"
         android:layout_margin="16dp"
-        android:src="@drawable/omOs"
+        android:src="@drawable/om_os"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="342dp"/>

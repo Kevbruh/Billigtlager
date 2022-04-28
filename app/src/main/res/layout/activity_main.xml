@@ -24,4 +24,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FAB_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_gravity="end|bottom"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
