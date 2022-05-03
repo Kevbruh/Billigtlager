@@ -11,4 +11,8 @@
     <string name="EmailHint">name@example.com</string>
     <string name="OmOs">"We are a young couple from Næstved that throughout the last years have been moving, increased family size, expanded our own business, inherited things or simply have had too many things in our home. Therefore, we have needed additional space for storing e.g., children’s things, furniture, and various things. Each time we were looking for a room/place for the things we were surprised that it was either expensive, openings hours were not suitable, or the security was not as we wanted. As a result of that, we created a place in which compromises were not made. We wish to offer the market the cheapest storing room in which the security is on top and flexibility to all customer types is available. "</string>
     <string name="HvemErVi">Who are we?</string>
+    <string name="TelefonNummer">Phone number: +45 20 78 12 18</string>
+    <string name="EmailKontakt">Email: info@billigtlager.dk</string>
+    <string name="kontaktInformationer">Contact informations:</string>
+    <string name="Send">Send</string>
 </resources>

@@ -24,30 +24,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:padding="10dp"
                 android:text="@string/Telefontider"
-                android:textSize="25sp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
                 android:text="@string/TelefontiderÅbent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
                 android:text="@string/Navn" />
 
             <EditText
                 android:id="@+id/ET_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/hintName"
                 android:padding="10dp"
@@ -58,8 +60,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
                 android:text="@string/Email" />
 
             <EditText
@@ -68,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/EmailHint"
                 android:padding="10dp"
@@ -78,8 +82,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
                 android:text="@string/Telefon" />
 
 
@@ -89,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/NummerHint"
                 android:padding="10dp"
@@ -98,8 +104,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
                 android:text="@string/Emne" />
 
 
@@ -109,6 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/BeskedEmne"
                 android:padding="10dp"
@@ -118,8 +126,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
                 android:text="@string/Besked" />
 
             <EditText
@@ -146,7 +155,25 @@
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="24sp"
+                android:text="@string/kontaktInformationer"/>
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TelefonNummer"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/EmailKontakt"
+                android:layout_marginStart="10dp"  />
         </LinearLayout>
 
 
@@ -162,5 +189,8 @@
         android:src="@drawable/fab_icon"
         android:layout_margin="16dp"
         android:contentDescription="@string/fabDial" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
