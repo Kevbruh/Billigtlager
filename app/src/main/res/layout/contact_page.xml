@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/bg_round"
             android:orientation="vertical"
             android:padding="10dp">
@@ -49,8 +49,10 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
-                android:hint="Jens Hansen*"
-                android:padding="10dp" />
+                android:hint="@string/hintName"
+                android:padding="10dp"
+                android:importantForAutofill="no"
+                android:inputType="text" />
 
 
             <TextView
@@ -68,7 +70,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/EmailHint"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
 
 
             <TextView
@@ -87,7 +91,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/NummerHint"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -105,7 +111,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/BeskedEmne"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:importantForAutofill="no"
+                android:inputType="textEmailSubject" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,7 +131,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/Besked"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:importantForAutofill="no"
+                android:inputType="text" />
 
             <Button
                 android:id="@+id/bt_send"
@@ -132,7 +142,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/bg_round"
                 android:padding="10dp"
-                android:text="Send"
+                android:text="@string/Send"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
@@ -150,6 +160,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/fab_icon"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        android:contentDescription="@string/fabDial" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

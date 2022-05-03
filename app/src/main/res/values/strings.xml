@@ -14,5 +14,8 @@
     <string name="NummerHint" translatable="false">+45 12 34 56 78*</string>
     <string name="OmOs">Vi er et ungt lokalt Næstved par, som igennem mange år både er flyttet meget, stiftet familie, udvidet forretningen, arvet ting eller bare haft for mange ting i hjemmet. Vi har i hvert fald haft et stort behov for mere opbevaringsplads til flytterodet, børnetingene, arvemøblerne og alle de diverse ting, man anskaffer sig gennem livet. Hver gang vi har forsøgt at finde et rum vi kunne leje, er vi blevet overrasket over prisen, åbningstiderne og/eller sikkerheden. Derfor syntes vi, at der manglede et sted, hvor den fulde pakke -både pris, sikkerhed og fleksibilitet blev tilbudt, og der ikke var gået på kompromis med hverken det ene eller det andet. Det er det, vi ønsker at tilbyde alle fremtidige lejere.</string>
     <string name="HvemErVi">Hvem er vi?</string>
+    <string name="hintName">Jens Hansen*</string>
+    <string name="Send">Send</string>
+    <string name="fabDial">Dial</string>
 
 </resources>
