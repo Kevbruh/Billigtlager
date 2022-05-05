@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_page);
+        setContentView(R.layout.open_door);
 
         //EditText
         etTo = findViewById(R.id.ET_to);

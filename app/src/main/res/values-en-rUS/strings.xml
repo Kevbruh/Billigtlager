@@ -6,7 +6,7 @@
     <string name="Navn">Name</string>
     <string name="Telefon">Phone number</string>
     <string name="Telefontider">Telephone hours</string>
-    <string name="TelefontiderÅbent">Monday-Sunday 8am to 8pm</string>
+    <string name="TelefontiderÅbent">Monday-Sunday 8 a.m. to 8 p.m.</string>
     <string name="BeskedEmne">Message subject</string>
     <string name="EmailHint">name@example.com</string>
     <string name="OmOs">"We are a young couple from Næstved that throughout the last years have been moving, increased family size, expanded our own business, inherited things or simply have had too many things in our home. Therefore, we have needed additional space for storing e.g., children’s things, furniture, and various things. Each time we were looking for a room/place for the things we were surprised that it was either expensive, openings hours were not suitable, or the security was not as we wanted. As a result of that, we created a place in which compromises were not made. We wish to offer the market the cheapest storing room in which the security is on top and flexibility to all customer types is available. "</string>
@@ -15,4 +15,9 @@
     <string name="EmailKontakt">Email: info@billigtlager.dk</string>
     <string name="kontaktInformationer">Contact informations:</string>
     <string name="Send">Send</string>
+    <string name="Dør1">Door 1</string>
+    <string name="Dør2">Door 2</string>
+    <string name="Dør3">Door 3</string>
+    <string name="Dør4">Door 4</string>
+    <string name="DørBesked">Push one of the following buttons to open the relevant door</string>
 </resources>

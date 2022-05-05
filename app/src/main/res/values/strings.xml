@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name">Billigtlager</string>
     <string name="Email" translatable="false">info@billigtlager.dk</string>
-    <string name="Besked">Besked</string>
-    <string name="Emne">Emne</string>
-    <string name="Navn">Navn</string>
-    <string name="Telefon">Telefon</string>
+    <string name="Besked">Besked:</string>
+    <string name="Emne">Emne:</string>
+    <string name="Navn">Navn:</string>
+    <string name="Telefon">Telefon:</string>
     <string name="Telefontider">Telefontider</string>
     <string name="TelefontiderÅbent">Mandag–Søndag: 8:00–20:00</string>
+    <string name="Dør1">Dør 1</string>
+    <string name="Dør2">Dør 2</string>
+    <string name="Dør3">Dør 3</string>
+    <string name="Dør4">Dør 4</string>
 
     /* hints */
     <string name="BeskedEmne">Besked emne</string>
@@ -20,5 +24,6 @@
     <string name="TelefonNummer">Telefonnummer: +45 20 78 12 18</string>
     <string name="EmailKontakt">Email: info@billigtlager.dk</string>
     <string name="kontaktInformationer">Kontakt informationer:</string>
+    <string name="DørBesked">Tryk på en af følgende knapper for at åbne den pågældende dør</string>
 
 </resources>
