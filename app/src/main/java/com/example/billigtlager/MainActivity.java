@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.open_door);
+        setContentView(R.layout.contact_page);
 
         //EditText
         etTo = findViewById(R.id.ET_to);
@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         //FAB
         fabDialling = findViewById(R.id.FAB_dial);
 
-
         btSend.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
@@ -50,19 +49,17 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
             intent.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
             startActivity(intent);
-            Toast.makeText(this, "The Email was send", Toast.LENGTH_SHORT).show();;
         });
 
         fabDialling.setOnClickListener(view -> {
             Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(Uri.parse("tel" +20781218));
             startActivity(callIntent);
-
         });
 
 
     }
-    public void openDoors(View view) {
-        doorSystem.openDoorsInNaestved();
-    }
+   // public void openDoors(View view) {
+     //   doorSystem.openDoorsInNaestved();
+    //}
 }
