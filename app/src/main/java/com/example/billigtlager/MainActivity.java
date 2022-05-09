@@ -15,7 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     EditText etTo, etSubject, etMessage, etPhone, etName;
-    Button btSend, door1, door2, door3, door4;
+    Button billigtLager, btSend, door1, door2, door3, door4;
 
     DoorSystem doorSystem;
 
@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         etName = findViewById(R.id.ET_name);
 
         //button
-        btSend = findViewById(R.id.bt_send);
+        billigtLager = findViewById(R.id.billigtLager);
+        btSend = findViewById(R.id.bt_send);,
         door1 = findViewById(R.id.Door1);
         door2 = findViewById(R.id.Door2);
         door3 = findViewById(R.id.Door3);
@@ -42,12 +43,22 @@ public class MainActivity extends AppCompatActivity {
         //FAB
         fabDialling = findViewById(R.id.FAB_dial);
 
+
+
         btSend.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
             intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@billigtlager.dk"});
             intent.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
             intent.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
+            startActivity(intent);
+
+        });
+
+        billigtLager.setOnClickListener(view -> {
+            String action = Intent.ACTION_VIEW;
+            Uri uri = Uri.parse("https://billigtlager.dk/");
+            Intent intent = new Intent(action, uri);
             startActivity(intent);
         });
 
