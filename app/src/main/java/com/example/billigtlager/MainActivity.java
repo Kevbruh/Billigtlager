@@ -9,13 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    Toolbar toolbar;
     EditText etTo, etSubject, etMessage, etPhone, etName;
-    Button billigtLager, btSend, door1, door2, door3, door4;
+    Button btSend, door1, door2, door3, door4;
 
     DoorSystem doorSystem;
 
@@ -33,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
         etName = findViewById(R.id.ET_name);
 
         //button
-        billigtLager = findViewById(R.id.billigtLager);
-        btSend = findViewById(R.id.bt_send);,
+        btSend = findViewById(R.id.bt_send);
         door1 = findViewById(R.id.Door1);
         door2 = findViewById(R.id.Door2);
         door3 = findViewById(R.id.Door3);
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         //FAB
         fabDialling = findViewById(R.id.FAB_dial);
 
+        //Toolbar
+        toolbar = findViewById(R.id.toolbar);
+        
+        //Other things
+        setSupportActionBar(toolbar);
 
 
         btSend.setOnClickListener(view -> {
@@ -55,22 +61,18 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        billigtLager.setOnClickListener(view -> {
-            String action = Intent.ACTION_VIEW;
-            Uri uri = Uri.parse("https://billigtlager.dk/");
-            Intent intent = new Intent(action, uri);
-            startActivity(intent);
-        });
-
         fabDialling.setOnClickListener(view -> {
             Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(Uri.parse("tel" +20781218));
             startActivity(callIntent);
         });
 
-
     }
-   // public void openDoors(View view) {
-     //   doorSystem.openDoorsInNaestved();
-    //}
+
+    private void setSupportActionBar(Toolbar toolbar) {
+    }
+
+    public void openDoors(View view) {
+        doorSystem.openDoorsInNaestved(view);
+    }
 }
