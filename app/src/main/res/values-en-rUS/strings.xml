@@ -28,8 +28,6 @@
     <string name="VoresPriser">Prices the first three months are 99 DKK per m2, afterwards the price is 119 DKK per m2.</string>
     <string name="RumInfo">Rooms vary from 3 m2 to 16 m2</string>
     <string name="Priser">Price information:</string>
-    <string name="Priser">P</string>
     <string name="PrisKnap">Book storageroom/more information</string>
-    <string name="PrisKnap">B</string>
     <string name="Adresse">Address: Militærsvinget 8A, 4700 Næstved</string>
 </resources>
