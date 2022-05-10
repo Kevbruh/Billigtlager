@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         //button
         billigtLager = findViewById(R.id.billigtLager);
-        btSend = findViewById(R.id.bt_send);,
+        btSend = findViewById(R.id.bt_send);
         door1 = findViewById(R.id.Door1);
         door2 = findViewById(R.id.Door2);
         door3 = findViewById(R.id.Door3);
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-   // public void openDoors(View view) {
-     //   doorSystem.openDoorsInNaestved();
-    //}
+     public void openDoors(View view) {
+       doorSystem.openDoorsInNaestved();
+    }
 }

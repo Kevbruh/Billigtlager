@@ -8,7 +8,7 @@ import android.widget.Toast;
 public class DoorSystem extends MainActivity {
 
 
-    public void openDoors(View view) {
+    public void openDoorsInNaestved(View view) {
         int id = view.getId();
         Intent textIntent = new Intent(Intent.ACTION_SEND);
         if (id == R.id.Door1) {
