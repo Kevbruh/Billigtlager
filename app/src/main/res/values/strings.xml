@@ -36,5 +36,7 @@
     <string name="Priser">Pris information:</string>
     <string name="PrisKnap">Book rum</string>
     <string name="Adresse">Adresse: Militærsvinget 8A, 4700 Næstved</string>
+    <string name="Oversigtskort">Oversigtskort</string>
+    <string name="OversigtsKortInfo">"Dette er et oversigtskort over lageret og dets rum "</string>
 
 </resources>
