@@ -25,4 +25,5 @@ public class DoorSystem extends MainActivity {
             Toast.makeText(this, "Dør 4 blev åbnet", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
