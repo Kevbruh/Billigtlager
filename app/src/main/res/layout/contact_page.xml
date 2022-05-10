@@ -21,9 +21,10 @@
         android:id="@+id/scrollViewFrontPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginVertical="58dp"
         android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:layout_marginVertical="58dp">
+        tools:layout_editor_absoluteX="-16dp">
 
 
         <LinearLayout
@@ -44,16 +45,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
-                android:textSize="18sp"
-                android:text="@string/TelefontiderÅbent" />
+                android:text="@string/TelefontiderÅbent"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:text="@string/Navn" />
+                android:text="@string/Navn"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/ET_name"
@@ -64,9 +65,9 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/hintName"
-                android:padding="10dp"
                 android:importantForAutofill="no"
-                android:inputType="text" />
+                android:inputType="text"
+                android:padding="10dp" />
 
 
             <TextView
@@ -74,8 +75,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:text="@string/Email" />
+                android:text="@string/Email"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/ET_to"
@@ -86,9 +87,9 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/EmailHint"
-                android:padding="10dp"
                 android:importantForAutofill="no"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
 
 
             <TextView
@@ -96,8 +97,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:text="@string/Telefon" />
+                android:text="@string/Telefon"
+                android:textSize="16sp" />
 
 
             <EditText
@@ -109,17 +110,17 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/NummerHint"
-                android:padding="10dp"
                 android:importantForAutofill="no"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:padding="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:text="@string/Emne" />
+                android:text="@string/Emne"
+                android:textSize="16sp" />
 
 
             <EditText
@@ -131,17 +132,17 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/BeskedEmne"
-                android:padding="10dp"
                 android:importantForAutofill="no"
-                android:inputType="textEmailSubject" />
+                android:inputType="textEmailSubject"
+                android:padding="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textSize="16sp"
-                android:text="@string/Besked" />
+                android:text="@string/Besked"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/ET_message"
@@ -152,9 +153,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/Besked"
-                android:padding="10dp"
                 android:importantForAutofill="no"
-                android:inputType="text" />
+                android:inputType="text"
+                android:padding="10dp" />
 
             <Button
                 android:id="@+id/bt_send"
@@ -170,23 +171,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:textSize="24sp"
-                android:text="@string/kontaktInformationer"/>
+                android:text="@string/kontaktInformationer"
+                android:textSize="24sp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/TelefonNummer"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="10dp"
+                android:text="@string/TelefonNummer" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/EmailKontakt"
-                android:layout_marginStart="10dp"  />
+                android:layout_marginStart="10dp"
+                android:text="@string/EmailKontakt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/Adresse" />
         </LinearLayout>
-
 
 
     </ScrollView>

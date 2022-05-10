@@ -30,5 +30,10 @@
     <string name="Adgang">Adgang 24/7</string>
     <string name="Overvågning">Overvågning</string>
     <string name="Opvarmet">Opvarmet</string>
+    <string name="VoresPriser">Prisen er 99 kr. pr. m2 de første 3 måneder, herefter er prisen 119 kr. om måneden.</string>
+    <string name="RumInfo">Rummene varierer fra 3 m2 til 16 m2.</string>
+    <string name="Priser">Pris information</string>
+    <string name="PrisKnap">Book rum/se mere information</string>
+    <string name="Adresse">Adresse: Militærsvinget 8A, 4700 Næstved</string>
 
 </resources>

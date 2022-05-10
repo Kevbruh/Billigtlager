@@ -23,7 +23,7 @@
         android:id="@+id/scrollViewFrontPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="57dp"
         android:background="#b5cef5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -51,47 +51,123 @@
 
 
             <ImageView
+                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/dollar_icon"/>
+                android:src="@drawable/dollar_icon"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ByensBilligste"
-                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"/>
 
             <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/time_icon"/>
+                android:src="@drawable/time_icon"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Adgang"
-                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"/>
+
             <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/time_icon"/>
+                android:src="@drawable/vision_icon"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Overvågning"
-                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"/>
+
             <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/heat_icon"/>
+                android:src="@drawable/heat_icon"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Opvarmet"
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Priser"
+                android:textColor="@color/black"
+                android:textSize="42sp"
+                android:background="#1d538c"
+                android:gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Opvarmet"
-                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+                android:text="@string/VoresPriser"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RumInfo"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PrisKnap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/kontaktInformationer"
+                android:textSize="24sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/TelefonNummer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/EmailKontakt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/Adresse" />
 
 
 
