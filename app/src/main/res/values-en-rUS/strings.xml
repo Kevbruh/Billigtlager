@@ -21,4 +21,8 @@
     <string name="Dør4">Door 4</string>
     <string name="DørBesked">Push one of the following buttons to open the relevant door</string>
     <string name="IntroTekst">"Flexible, frost free, and secure storage "</string>
+    <string name="ByensBilligste">Cheapest in town</string>
+    <string name="Adgang">Access 24/7</string>
+    <string name="Overvågning">Surveillance</string>
+    <string name="Opvarmet">Heated</string>
 </resources>

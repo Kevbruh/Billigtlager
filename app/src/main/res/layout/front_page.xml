@@ -49,11 +49,50 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/kasse_billede" />
 
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dollar_icon"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hej"
+                android:text="@string/ByensBilligste"
                 app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Adgang"
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Overvågning"
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heat_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Opvarmet"
+                app:layout_constraintTop_toBottomOf="@+id/kasseBillede" />
+
+
 
 
         </LinearLayout>
