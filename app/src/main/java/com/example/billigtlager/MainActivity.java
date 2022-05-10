@@ -68,9 +68,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(callIntent);
         });
 
-
     }
-     public void openDoors(View view) {
-       doorSystem.openDoorsInNaestved();
+    public void openDoors(View view) {
+        doorSystem.openDoorsInNaestved();
     }
 }
