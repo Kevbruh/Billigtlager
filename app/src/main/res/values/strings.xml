@@ -25,5 +25,6 @@
     <string name="EmailKontakt">Email: info@billigtlager.dk</string>
     <string name="kontaktInformationer">Kontakt informationer:</string>
     <string name="DørBesked">Tryk på en af følgende knapper for at åbne den pågældende dør</string>
+    <string name="IntroTekst">Fleksibel, frostfri og sikker opbevaring</string>
 
 </resources>

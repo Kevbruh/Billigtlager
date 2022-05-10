@@ -20,4 +20,5 @@
     <string name="Dør3">Door 3</string>
     <string name="Dør4">Door 4</string>
     <string name="DørBesked">Push one of the following buttons to open the relevant door</string>
+    <string name="IntroTekst">"Flexible, frost free, and secure storage "</string>
 </resources>
