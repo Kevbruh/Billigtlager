@@ -30,4 +30,6 @@
     <string name="Priser">Price information:</string>
     <string name="PrisKnap">Book storageroom</string>
     <string name="Adresse">Address: Militærsvinget 8A, 4700 Næstved</string>
+    <string name="Oversigtskort">Overview map</string>
+    <string name="OversigtsKortInfo">This is a overview map of the warehouse and the storage rooms</string>
 </resources>
