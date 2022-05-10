@@ -12,6 +12,7 @@
     <string name="Dør3">Dør 3</string>
     <string name="Dør4">Dør 4</string>
 
+
     /* hints */
     <string name="BeskedEmne">Besked emne</string>
     <string name="EmailHint">navn@eksempel.dk</string>

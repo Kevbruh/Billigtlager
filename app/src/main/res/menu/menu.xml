@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/front_page"
+        android:title="Forside"/>
+
+    <item android:id="@+id/open_door"
+        android:title="Åben dør"/>
+
+    <item android:id="@+id/contact_page"
+        android:title="Kontakt"/>
+
+
+    <item android:id="@+id/about_us"
+        android:title="Om os"/>
+
+
+</menu>

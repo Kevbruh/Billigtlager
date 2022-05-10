@@ -1,10 +1,14 @@
 package com.example.billigtlager;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     DoorSystem doorSystem;
 
     FloatingActionButton fabDialling;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Toolbar
         toolbar = findViewById(R.id.toolbar);
-        
+
         //Other things
         setSupportActionBar(toolbar);
 
@@ -63,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         fabDialling.setOnClickListener(view -> {
             Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel" +20781218));
+            callIntent.setData(Uri.parse("tel" + 20781218));
             startActivity(callIntent);
         });
 
@@ -75,4 +80,36 @@ public class MainActivity extends AppCompatActivity {
     public void openDoors(View view) {
         doorSystem.openDoorsInNaestved(view);
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    // @Override
+    // public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+    //  switch (item.getItemId()) {
+    //      case R.id.front_page:
+    //          setContentView(R.layout.front_page);
+    //          break;
+    //      case R.id.open_door:
+    //          setContentView(R.layout.open_door);
+    //          break;
+    //      case R.id.contact_page:
+    //          setContentView(R.layout.contact_page);
+    //          break;
+    //      case R.id.about_us:
+    //          setContentView(R.layout.about_us);
+    //          break;
+    //      case R.id.exit:
+//
+    //      }
+    //  return super.onOptionsItemSelected(item);
+    // }
+
 }
