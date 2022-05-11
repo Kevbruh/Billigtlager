@@ -2,6 +2,7 @@ package com.example.billigtlager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,7 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -50,15 +51,17 @@ public class MainActivity extends AppCompatActivity {
         fabDialling = findViewById(R.id.FAB_dial);
 
         //Toolbar
-        toolbar = findViewById(R.id.toolbar);
 
-        //Other things
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
+
     }
 
-    private void setSupportActionBar(Toolbar toolbar) {
-    }
+
 
     public void openDoors(View view) {
         doorSystem.openDoorsInNaestved(view);
@@ -67,31 +70,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu, menu);
-
+        getMenuInflater().inflate(R.menu.main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-    // @Override
-    // public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-    //  switch (item.getItemId()) {
-    //      case R.id.front_page:
-    //          setContentView(R.layout.front_page);
-    //          break;
-    //      case R.id.open_door:
-    //          setContentView(R.layout.open_door);
-    //          break;
-    //      case R.id.contact_page:
-    //          setContentView(R.layout.contact_page);
-    //          break;
-    //      case R.id.about_us:
-    //          setContentView(R.layout.about_us);
-    //          break;
-    //      case R.id.exit:
-//
-    //      }
-    //  return super.onOptionsItemSelected(item);
-    // }
+        int itemId = item.getItemId();
+
+        if(itemId == R.id.front_page){
+            Toast.makeText(this, "Front page", Toast.LENGTH_SHORT).show();
+        } else if(itemId == R.id.open_door){
+            Toast.makeText(this, "Open door", Toast.LENGTH_SHORT).show();
+        }
+        else if(itemId == R.id.contact_page){
+            Toast.makeText(this, "Contact", Toast.LENGTH_SHORT).show();
+        }
+        else if(itemId == R.id.about_page){
+            Toast.makeText(this, "About", Toast.LENGTH_SHORT).show();
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
 }
