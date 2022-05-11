@@ -28,4 +28,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             super(itemView);
         }
     }
+
+    public void etl(){
+
+    }
 }
