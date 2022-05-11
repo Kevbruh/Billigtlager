@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_page);
+        setContentView(R.layout.front_page);
 
         //EditText
         etTo = findViewById(R.id.ET_to);
@@ -57,21 +57,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        btSend.setOnClickListener(view -> {
-            Intent intent = new Intent(Intent.ACTION_SEND);
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@billigtlager.dk"});
-            intent.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
-            intent.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
-            startActivity(intent);
 
-        });
-
-        fabDialling.setOnClickListener(view -> {
-            Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel" + 20781218));
-            startActivity(callIntent);
-        });
 
     }
 
