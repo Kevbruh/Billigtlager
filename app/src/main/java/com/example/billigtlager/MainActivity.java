@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_page);
+        setContentView(R.layout.book_room);
 
         //EditText
         etTo = findViewById(R.id.ET_to);
