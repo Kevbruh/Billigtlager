@@ -38,5 +38,11 @@
     <string name="Adresse">Adresse: Militærsvinget 8A, 4700 Næstved</string>
     <string name="Oversigtskort">Oversigtskort</string>
     <string name="OversigtsKortInfo">"Dette er et oversigtskort over lageret og dets rum "</string>
+    <string name="BookRumBesked">"Hos Billigtlager kan du booke rum i mange forskellige størrelser. Nedenunder kan du se de forskellige rum, som du kan booke. "</string>
+    <string name="Rum3_4">Rum 3-4 m2</string>
+    <string name="Rum5_6">Rum 5-6 m2</string>
+    <string name="Rum7_8">Rum 7-8 m2</string>
+    <string name="Rum9_10">Rum 9-10 m2</string>
+    <string name="rum15_20">Rum 15-20 m2</string>
 
 </resources>
