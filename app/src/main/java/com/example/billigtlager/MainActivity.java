@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     DoorSystem doorSystem;
 
+
     FloatingActionButton fabDialling;
 
     @Override
@@ -57,41 +58,53 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
-
     }
-
 
 
     public void openDoors(View view) {
         doorSystem.openDoorsInNaestved(view);
     }
 
+    public void Main_menu(Menu menu) { }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main_menu, menu);
+
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        int itemId = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.front_page:
+                setContentView(R.layout.front_page);
+                break;
 
-        if(itemId == R.id.front_page){
-            Toast.makeText(this, "Front page", Toast.LENGTH_SHORT).show();
-        } else if(itemId == R.id.open_door){
-            Toast.makeText(this, "Open door", Toast.LENGTH_SHORT).show();
-        }
-        else if(itemId == R.id.contact_page){
-            Toast.makeText(this, "Contact", Toast.LENGTH_SHORT).show();
-        }
-        else if(itemId == R.id.about_page){
-            Toast.makeText(this, "About", Toast.LENGTH_SHORT).show();
+            case R.id.open_door:
+                setContentView(R.layout.open_door);
+                break;
+            case R.id.contact_page:
+                setContentView(R.layout.contact_page);
+                break;
+            case R.id.book_room:
+                setContentView(R.layout.book_room);
+                break;
+
+            case R.id.about_page:
+                setContentView(R.layout.about_us);
+                break;
+
+            case R.id.Rum3_4:
+                setContentView(R.layout.rum3_4);
+                break;
+
         }
 
+                return super.onOptionsItemSelected(item);
+        }
 
-        return super.onOptionsItemSelected(item);
-    }
 }
