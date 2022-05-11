@@ -51,17 +51,10 @@ public class MainActivity extends AppCompatActivity {
         fabDialling = findViewById(R.id.FAB_dial);
 
         //Toolbar
-
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
-
     }
-
-
 
     public void openDoors(View view) {
         doorSystem.openDoorsInNaestved(view);
