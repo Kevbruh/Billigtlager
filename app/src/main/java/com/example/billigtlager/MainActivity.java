@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         fabDialling = findViewById(R.id.FAB_dial);
 
         //Toolbar
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
