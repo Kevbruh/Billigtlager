@@ -55,9 +55,6 @@ public class MainActivity extends AppCompatActivity {
         //Other things
         setSupportActionBar(toolbar);
 
-
-
-
     }
 
     private void setSupportActionBar(Toolbar toolbar) {
@@ -97,5 +94,4 @@ public class MainActivity extends AppCompatActivity {
     //      }
     //  return super.onOptionsItemSelected(item);
     // }
-
 }
