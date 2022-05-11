@@ -2,6 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
     <item
         android:id="@+id/front_page"
         android:title="Front page"
@@ -19,10 +21,21 @@
         app:showAsAction="never"/>
 
     <item
+        android:id="@+id/book_room"
+        android:title="Book room"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/about_page"
         android:title="About"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Rum3_4"
+        android:title="Rum3"
+        app:showAsAction="never"/>
+
+
 
 
 
