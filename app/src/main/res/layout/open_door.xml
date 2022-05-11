@@ -6,7 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blue">
+    <com.google.android.material.appbar.MaterialToolbar
 
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="TEST"
+
+        android:background="#1d538c" />
 
     <TextView
         android:id="@+id/doorMessage"
