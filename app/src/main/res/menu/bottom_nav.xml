@@ -17,9 +17,9 @@
         android:title="Book Depot"/>
 
     <item
-        android:id="@+id/aboutUsFragment"
+        android:id="@+id/contactFragment"
         android:icon="@drawable/ic_about_us_icon"
-        android:title="About"/>
+        android:title="Contact"/>
 
     <item
         android:id="@+id/profileFragment"

@@ -7,26 +7,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ContactActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/app_name"
-        android:background="#1d538c"/>
-
 
     <ScrollView
         android:id="@+id/scrollViewFrontPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="58dp"
         android:background="#b5cef5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.446"
         tools:layout_editor_absoluteX="0dp">
 
@@ -42,8 +30,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/Telefontider"
-                android:textSize="24sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,8 +39,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/TelefontiderÅbent"
-                android:textSize="18sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,8 +48,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/Navn"
-                android:textSize="16sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/ET_name"
@@ -83,8 +71,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/Email"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/ET_to"
@@ -164,17 +152,17 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_round"
                 android:hint="@string/Besked"
-                android:textColor="@color/black"
                 android:importantForAutofill="no"
                 android:inputType="text"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColor="@color/black" />
 
             <Button
-                android:onClick="sendEmail"
                 android:id="@+id/bt_send"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:onClick="sendEmail"
                 android:padding="10dp"
                 android:text="@string/Send"
                 android:textSize="25sp" />
@@ -184,8 +172,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/kontaktInformationer"
-                android:textSize="24sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
 
             <TextView
@@ -193,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/TelefonNummer"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"

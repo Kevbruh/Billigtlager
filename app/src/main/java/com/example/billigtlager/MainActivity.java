@@ -1,6 +1,5 @@
 package com.example.billigtlager;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -11,7 +10,6 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,7 +17,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -83,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.homeFragment,
                 R.id.depotFragment,
                 R.id.bookDepotFragment,
-                R.id.aboutUsFragment,
+                R.id.contactFragment,
                 R.id.profileFragment)
                 .build();
 
