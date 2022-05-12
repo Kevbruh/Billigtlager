@@ -1,14 +1,24 @@
 package com.example.billigtlager;
 
 import android.content.Intent;
-import android.view.View;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class FrontPage extends AppCompatActivity {
 
-    public void bookRoomButton(View view) {
-        Intent intent = new Intent(this, BookRoom.class);
-        startActivity(intent);
+
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    Button goToBookRoomPage = findViewById(R.id.fpbtnBookRoom);
+
+    goToBookRoomPage.setOnClickListener(view -> {
+        Toast.makeText(this, "hej", Toast.LENGTH_LONG);
+    });
     }
+
 }

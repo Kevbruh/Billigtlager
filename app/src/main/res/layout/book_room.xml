@@ -22,7 +22,6 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF5722"
         android:gravity="center"
         android:text="@string/Priser"
         android:textColor="@color/black"
@@ -36,7 +35,6 @@
         android:id="@+id/LLBookrum1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/kant"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,22 +43,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
             android:text="@string/VoresPriser"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/RumInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="2dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/RumInfo"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -92,7 +91,9 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/Rum5_6"
         app:layout_constraintStart_toStartOf="parent"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/Rum5_6"
@@ -104,7 +105,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/Rum7_8"
@@ -115,7 +118,9 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/Rum9_10"
         app:layout_constraintStart_toStartOf="parent"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/Rum9_10"
@@ -127,7 +132,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Rum5_6"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -139,7 +146,9 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rum9_10" />
+        app:layout_constraintTop_toBottomOf="@+id/Rum9_10"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

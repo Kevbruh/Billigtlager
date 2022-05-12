@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/drawable/custom_button.xml" value="0.2275" />
+        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/drawable/rounded_button.xml" value="0.2275" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/about_us.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/activity_contact.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/activity_main.xml" value="0.3046875" />
+        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/book_room.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/contact_page.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/front_page.xml" value="0.3046875" />
+        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/open_door.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/test2.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/menu/main_menu.xml" value="0.3046875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/test.xml" value="0.2546875" />

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button btSend, door1, door2, door3, door4;
 
     DoorSystem doorSystem;
+    EmailFunction emailFunction;
 
     FloatingActionButton fabDialling;
 
@@ -105,4 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
 
+        public void sendEmail(View view) {
+        emailFunction.email(view);
+        }
 }
