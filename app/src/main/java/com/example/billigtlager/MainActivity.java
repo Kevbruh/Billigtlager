@@ -73,9 +73,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -88,8 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.open_door);
                 break;
             case R.id.contact_page:
-                Intent i = new Intent(this, ContactActivity.class);
-                startActivity(i);
+                setContentView(R.layout.contact_page);
                 break;
             case R.id.book_room:
                 setContentView(R.layout.book_room);
@@ -107,8 +103,5 @@ public class MainActivity extends AppCompatActivity {
 
                 return super.onOptionsItemSelected(item);
         }
-
-
-
 
 }

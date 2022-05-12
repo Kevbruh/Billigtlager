@@ -18,8 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="TEST"
-
+        app:title="@string/app_name"
         android:background="#1d538c" />
 
 
@@ -52,11 +51,7 @@
         android:src="@drawable/om_os"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="HEJ"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:contentDescription="Billede fra hjemmesiden" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
