@@ -22,17 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     EditText etTo, etSubject, etMessage, etPhone, etName;
-    Button btSend, door1, door2, door3, door4;
+    Button btSend, door1, door2, door3, door4, fpBtnBookRoom;
 
     DoorSystem doorSystem;
     EmailFunction emailFunction;
+    FrontPage frontPage;
 
     FloatingActionButton fabDialling;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.front_page);
+        setContentView(R.layout.contact_page
+        );
 
         //EditText
         etTo = findViewById(R.id.ET_to);
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         door2 = findViewById(R.id.Door2);
         door3 = findViewById(R.id.Door3);
         door4 = findViewById(R.id.Door4);
+        fpBtnBookRoom = findViewById(R.id.fpbtnBookRoom);
 
         //FAB
         fabDialling = findViewById(R.id.FAB_dial);
@@ -107,5 +110,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendEmail(View view) {
         emailFunction.email(view);
+    }
+
+    public void openBookRoom(View view) {
+        frontPage.bookRoomButton(view);
     }
 }
