@@ -81,29 +81,27 @@ public class MainActivity extends AppCompatActivity {
                 Intent f = new Intent(this, FrontPage.class);
                 startActivity(f);
                 break;
-
             case R.id.open_door:
-                setContentView(R.layout.open_door);
+                Intent o = new Intent(this, OpenActivity.class);
+                startActivity(o);
                 break;
             case R.id.contact_page:
                 Intent c = new Intent(this, ContactActivity.class);
                 startActivity(c);
                 break;
             case R.id.book_room:
-                setContentView(R.layout.book_room);
+                Intent b = new Intent(this, BookActivity.class);
+                startActivity(b);
                 break;
 
             case R.id.about_page:
-                setContentView(R.layout.about_us);
-                break;
-
-            case R.id.Rum3_4:
-                setContentView(R.layout.rum3_4);
+                Intent a = new Intent(this, AboutActivity.class);
+                startActivity(a);
                 break;
 
         }
 
-                return super.onOptionsItemSelected(item);
-        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }

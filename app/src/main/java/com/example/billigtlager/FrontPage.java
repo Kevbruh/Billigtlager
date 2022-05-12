@@ -19,7 +19,7 @@ public class FrontPage extends AppCompatActivity {
     Toolbar toolbar;
 
     public void bookRoomButton(View view) {
-        Intent intent = new Intent(this, BookRoom.class);
+        Intent intent = new Intent(this, BookActivity.class);
         startActivity(intent);
 
 
