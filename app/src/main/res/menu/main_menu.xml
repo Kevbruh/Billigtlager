@@ -30,11 +30,6 @@
         android:title="About"
         app:showAsAction="never"/>
 
-    <item
-        android:id="@+id/Rum3_4"
-        android:title="Rum3"
-        app:showAsAction="never"/>
-
 
 
 
