@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_icon"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/depotFragment"
+        android:icon="@drawable/ic_depot_icon"
+        android:title="Depos"/>
+
+    <item
+        android:id="@+id/bookDepotFragment"
+        android:icon="@drawable/ic_book_depot_icon"
+        android:title="Book Depot"/>
+
+    <item
+        android:id="@+id/aboutUsFragment"
+        android:icon="@drawable/ic_about_us_icon"
+        android:title="About"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile_icon"
+        android:title="Profile"/>
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "535761486008",
+    "project_id": "billigtlager-591bd",
+    "storage_bucket": "billigtlager-591bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535761486008:android:f4ecd09dd80d5deacdf44d",
+        "android_client_info": {
+          "package_name": "com.example.billigtlager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535761486008-oq2f4238v5l27a0tf47duuuvfo0d5adp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_hO874aY9DMucVVQBwVNQ-3Ll_sDJIXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535761486008-oq2f4238v5l27a0tf47duuuvfo0d5adp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

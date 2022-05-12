@@ -44,5 +44,7 @@
     <string name="Rum7_8">Rum 7-8 m2</string>
     <string name="Rum9_10">Rum 9-10 m2</string>
     <string name="rum15_20">Rum 15-20 m2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

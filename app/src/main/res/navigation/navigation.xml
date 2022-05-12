@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="About"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.billigtlager.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/depotFragment"
+        android:name="com.example.billigtlager.DepotFragment"
+        android:label="Depot"
+        tools:layout="@layout/fragment_depot" />
+    <fragment
+        android:id="@+id/bookDepotFragment"
+        android:name="com.example.billigtlager.BookDepotFragment"
+        android:label="Book Depot"
+        tools:layout="@layout/fragment_book_depot" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.billigtlager.AboutUsFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.billigtlager.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/bookRoomFragment"
+        android:name="com.example.billigtlager.BookRoomFragment"
+        android:label="fragment_book_room"
+        tools:layout="@layout/fragment_book_room" />
+    <fragment
+        android:id="@+id/room15x20Fragment"
+        android:name="com.example.billigtlager.Room15x20Fragment"
+        android:label="15x20 m2"
+        tools:layout="@layout/fragment_room15x20" />
+    <fragment
+        android:id="@+id/room3x4Fragment"
+        android:name="com.example.billigtlager.Room3x4Fragment"
+        android:label="3x4 m2"
+        tools:layout="@layout/fragment_room3x4" />
+    <fragment
+        android:id="@+id/room5x6Fragment"
+        android:name="com.example.billigtlager.Room5x6Fragment"
+        android:label="5x6 m2"
+        tools:layout="@layout/fragment_room5x6" />
+    <fragment
+        android:id="@+id/room7x8Fragment"
+        android:name="com.example.billigtlager.Room7x8Fragment"
+        android:label="7x8 m2"
+        tools:layout="@layout/fragment_room7x8" />
+    <fragment
+        android:id="@+id/room9x10Fragment"
+        android:name="com.example.billigtlager.Room9x10Fragment"
+        android:label="9x10 m2"
+        tools:layout="@layout/fragment_room9x10" />
+</navigation>
