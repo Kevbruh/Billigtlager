@@ -9,6 +9,7 @@ public class EmailFunction extends AppCompatActivity {
 
     MainActivity main;
 
+
     public void email(View view){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
