@@ -42,18 +42,20 @@ public class ContactActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.front_page:
-                setContentView(R.layout.front_page);
+                Intent f = new Intent(this, FrontPage.class);
+                startActivity(f);
                 break;
 
             case R.id.open_door:
                 setContentView(R.layout.open_door);
                 break;
             case R.id.contact_page:
-                Intent i = new Intent(this, ContactActivity.class);
-                startActivity(i);
+                Intent c = new Intent(this, ContactActivity.class);
+                startActivity(c);
                 break;
             case R.id.book_room:
-                setContentView(R.layout.book_room);
+                Intent b = new Intent(this, BookActivity.class);
+                startActivity(b);
                 break;
 
             case R.id.about_page:

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Billigtlager">
         <activity
+            android:name=".BookActivity"
+            android:exported="false" />
+        <activity
             android:name=".ContactActivity"
             android:exported="false" />
         <activity
