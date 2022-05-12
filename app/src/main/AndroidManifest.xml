@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Billigtlager">
         <activity
+            android:name=".Rum15_20Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Rum9_10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Rum7_8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Rum5_6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Rum3_4Activity"
+            android:exported="false" />
+        <activity
             android:name=".AboutActivity"
             android:exported="false" />
         <activity

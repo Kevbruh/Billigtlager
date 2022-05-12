@@ -57,6 +57,36 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void BookRoomButton (View view){
+        Intent f = new Intent(this, BookActivity.class);
+        startActivity(f);
+    }
+
+
+    public void rum3_4Button (View view){
+        Intent f = new Intent(this, Rum3_4Activity.class);
+        startActivity(f);
+    }
+
+    public void rum5_6Button (View view){
+        Intent f = new Intent(this, Rum5_6Activity.class);
+        startActivity(f);
+    }
+
+    public void rum7_8Button (View view){
+        Intent f = new Intent(this, Rum7_8Activity.class);
+        startActivity(f);
+    }
+
+    public void rum9_10Button (View view){
+        Intent f = new Intent(this, Rum9_10Activity.class);
+        startActivity(f);
+
+    }
+    public void rum15_20Button (View view){
+        Intent f = new Intent(this, Rum15_20Activity.class);
+        startActivity(f);
+    }
 
     public void openDoors(View view) {
         doorSystem.openDoorsInNaestved(view);
@@ -78,17 +108,20 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.front_page:
-                Intent f = new Intent(this, FrontPage.class);
+                Intent f = new Intent(this, MainActivity.class);
                 startActivity(f);
+
                 break;
             case R.id.open_door:
                 Intent o = new Intent(this, OpenActivity.class);
                 startActivity(o);
                 break;
+
             case R.id.contact_page:
                 Intent c = new Intent(this, ContactActivity.class);
                 startActivity(c);
                 break;
+
             case R.id.book_room:
                 Intent b = new Intent(this, BookActivity.class);
                 startActivity(b);

@@ -88,11 +88,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:onClick="rum3_4Button"
+        android:padding="8dp"
         android:text="@string/Rum3_4"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Rum5_6"
-        app:layout_constraintStart_toStartOf="parent"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        app:layout_constraintBaseline_toBaselineOf="@+id/Rum5_6"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Rum5_6"
@@ -100,22 +101,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:onClick="rum5_6Button"
+        android:padding="8dp"
         android:text="@string/Rum5_6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
         android:id="@+id/Rum7_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:onClick="rum7_8Button"
+        android:padding="8dp"
         android:text="@string/Rum7_8"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Rum9_10"
-        app:layout_constraintStart_toStartOf="parent"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        app:layout_constraintBaseline_toBaselineOf="@+id/Rum9_10"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Rum9_10"
@@ -123,16 +126,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:onClick="rum9_10Button"
+        android:padding="8dp"
         android:text="@string/Rum9_10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rum5_6"
         android:textSize="18sp"
-        android:padding="8dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rum5_6" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="rum15_20Button"
         android:padding="8dp"
         android:text="@string/rum15_20"
         android:textAlignment="center"

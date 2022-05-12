@@ -16,16 +16,11 @@ import androidx.appcompat.widget.Toolbar;
 public class FrontPage extends AppCompatActivity {
 
 
-    Toolbar toolbar;
-
-    public void bookRoomButton(View view) {
-        Intent intent = new Intent(this, BookActivity.class);
-        startActivity(intent);
 
 
+        Toolbar toolbar;
 
 
-    }
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
