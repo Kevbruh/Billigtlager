@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class ContactActivity extends AppCompatActivity {
+public class OpenActivity extends AppCompatActivity {
 
     Toolbar toolbar;
 
@@ -20,7 +20,7 @@ public class ContactActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_page);
+        setContentView(R.layout.open_door);
 
 
         toolbar = findViewById(R.id.toolbar);
