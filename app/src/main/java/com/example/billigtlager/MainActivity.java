@@ -151,36 +151,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onCreateOptionsMenu(menu);
     }
-
-    // @Override
-    // public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-    //  switch (item.getItemId()) {
-    //      case R.id.front_page:
-    //          Intent f = new Intent(this, FrontPage.class);
-    //          startActivity(f);
-    //          break;
-    //      case R.id.open_door:
-    //          Intent o = new Intent(this, OpenActivity.class);
-    //          startActivity(o);
-    //          break;
-    //      case R.id.contact_page:
-    //          Intent c = new Intent(this, ContactActivity.class);
-    //          startActivity(c);
-    //          break;
-    //      case R.id.book_room:
-    //          Intent b = new Intent(this, BookActivity.class);
-    //          startActivity(b);
-    //          break;
-
-    //      case R.id.about_page:
-    //          Intent a = new Intent(this, AboutActivity.class);
-    //          startActivity(a);
-    //          break;
-
-    //  }
-
-    //  return super.onOptionsItemSelected(item);
-    //}
-
 }
