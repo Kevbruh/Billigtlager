@@ -22,7 +22,6 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF5722"
         android:gravity="center"
         android:text="@string/Priser"
         android:textColor="@color/black"
@@ -32,38 +31,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <LinearLayout
-        android:id="@+id/LLBookrum1"
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/kant"
-        android:orientation="vertical"
+        android:text="@string/VoresPriser"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/VoresPriser"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+    <TextView
+        android:id="@+id/RumInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RumInfo"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"/>
 
-        <TextView
-            android:id="@+id/RumInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/RumInfo"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -71,7 +63,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#b5cef5"
-        app:layout_constraintTop_toBottomOf="@+id/LLBookrum1">
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/RumInfo">
 
         <TextView
             android:layout_width="match_parent"
@@ -92,6 +85,7 @@
         android:padding="8dp"
         android:text="@string/Rum3_4"
         android:textSize="18sp"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBaseline_toBaselineOf="@+id/Rum5_6"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -103,6 +97,7 @@
         android:layout_marginEnd="16dp"
         android:onClick="rum5_6Button"
         android:padding="8dp"
+        android:background="@drawable/rounded_button"
         android:text="@string/Rum5_6"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +111,7 @@
         android:onClick="rum7_8Button"
         android:padding="8dp"
         android:text="@string/Rum7_8"
+        android:background="@drawable/rounded_button"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/Rum9_10"
         app:layout_constraintStart_toStartOf="parent" />
@@ -127,6 +123,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:onClick="rum9_10Button"
+        android:background="@drawable/rounded_button"
         android:padding="8dp"
         android:text="@string/Rum9_10"
         android:textSize="18sp"
@@ -140,6 +137,7 @@
         android:onClick="rum15_20Button"
         android:padding="8dp"
         android:text="@string/rum15_20"
+        android:background="@drawable/rounded_button"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
