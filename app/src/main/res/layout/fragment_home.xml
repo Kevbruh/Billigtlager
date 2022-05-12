@@ -6,26 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/app_name"
-        android:background="#1d538c"/>
-
-
     <ScrollView
         android:id="@+id/scrollViewFrontPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="57dp"
         android:background="#b5cef5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp">
 
@@ -48,9 +35,9 @@
                 android:id="@+id/kasseBillede"
                 android:layout_width="wrap_content"
                 android:layout_height="241dp"
+                android:contentDescription="Front page picture of boxes"
                 android:scaleType="fitStart"
-                android:src="@drawable/kasse_billede"
-                android:contentDescription="Front page picture of boxes"/>
+                android:src="@drawable/kasse_billede" />
 
 
             <ImageView
@@ -58,8 +45,8 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="32dp"
-                android:src="@drawable/dollar_icon"
-                android:contentDescription="Dollar icon" />
+                android:contentDescription="Dollar icon"
+                android:src="@drawable/dollar_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -75,8 +62,8 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/time_icon"
-                android:contentDescription="Time icon" />
+                android:contentDescription="Time icon"
+                android:src="@drawable/time_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,8 +79,8 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/vision_icon"
-                android:contentDescription="Eye icon"/>
+                android:contentDescription="Eye icon"
+                android:src="@drawable/vision_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,8 +96,8 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/heat_icon"
-                android:contentDescription="Fire icon"/>
+                android:contentDescription="Fire icon"
+                android:src="@drawable/heat_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -178,7 +165,7 @@
                 android:gravity="center"
                 android:text="@string/Oversigtskort"
                 android:textColor="@color/black"
-                android:textSize="42sp"/>
+                android:textSize="42sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -189,22 +176,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="@string/OversigtsKortInfo"
                     android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textSize="24sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="256dp"
                     android:layout_marginStart="6dp"
                     android:layout_marginEnd="6dp"
-                    android:src="@drawable/oversigtskort"
-                    android:contentDescription="Overview map" />
+                    android:contentDescription="Overview map"
+                    android:src="@drawable/oversigtskort" />
 
 
             </LinearLayout>
-
 
 
             <TextView
@@ -213,8 +199,8 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/kontaktInformationer"
-                android:textSize="24sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
 
             <TextView
@@ -222,22 +208,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/TelefonNummer"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/EmailKontakt"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginBottom="16dp"
                 android:text="@string/Adresse"
-                android:textColor="@color/black"
-                android:layout_marginBottom="16dp"/>
+                android:textColor="@color/black" />
 
         </LinearLayout>
 

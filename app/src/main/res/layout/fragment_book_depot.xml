@@ -7,16 +7,6 @@
     tools:context=".MainActivity"
     android:background="#b5cef5">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/app_name"
-        android:background="#1d538c" />
 
     <TextView
         android:id="@+id/textView3"
@@ -29,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        />
 
 
     <TextView
@@ -81,7 +71,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:onClick="rum3_4Button"
         android:padding="8dp"
         android:text="@string/Rum3_4"
         android:textSize="18sp"
@@ -95,7 +84,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:onClick="rum5_6Button"
         android:padding="8dp"
         android:background="@drawable/rounded_button"
         android:text="@string/Rum5_6"
@@ -108,7 +96,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:onClick="rum7_8Button"
         android:padding="8dp"
         android:text="@string/Rum7_8"
         android:background="@drawable/rounded_button"
@@ -122,7 +109,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:onClick="rum9_10Button"
         android:background="@drawable/rounded_button"
         android:padding="8dp"
         android:text="@string/Rum9_10"
@@ -135,7 +121,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="rum15_20Button"
         android:padding="8dp"
         android:text="@string/rum15_20"
         android:background="@drawable/rounded_button"
@@ -144,6 +129,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Rum9_10" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

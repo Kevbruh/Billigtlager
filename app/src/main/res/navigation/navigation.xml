@@ -13,7 +13,7 @@
     <fragment
         android:id="@+id/depotFragment"
         android:name="com.example.billigtlager.DepotFragment"
-        android:label="Depot"
+        android:label="Unlock Doors"
         tools:layout="@layout/fragment_depot" />
     <fragment
         android:id="@+id/bookDepotFragment"
