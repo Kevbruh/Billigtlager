@@ -15,6 +15,8 @@ public class EmailFunction extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@billigtlager.dk"});
         intent.putExtra(Intent.EXTRA_SUBJECT, main.etSubject.getText().toString());
         intent.putExtra(Intent.EXTRA_TEXT, main.etMessage.getText().toString());
+        intent.putExtra(Intent.EXTRA_TEXT, main.etName.getText().toString());
+        intent.putExtra(Intent.EXTRA_TEXT, main.etPhone.getText().toString());
         startActivity(intent);
     }
 }
