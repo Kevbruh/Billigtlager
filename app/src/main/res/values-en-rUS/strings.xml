@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Billigtlager</string>
+    <string name="Besked">Message</string>
+    <string name="Emne">Subject</string>
+    <string name="Navn">Name</string>
+    <string name="Telefon">Phone number</string>
+    <string name="Telefontider">Telephone hours</string>
+    <string name="TelefontiderÅbent">Monday-Sunday 8 a.m. to 8 p.m.</string>
+    <string name="BeskedEmne">Message subject</string>
+    <string name="EmailHint">name@example.com</string>
+    <string name="OmOs">"We are a young couple from Næstved that throughout the last years have been moving, increased family size, expanded our own business, inherited things or simply have had too many things in our home. Therefore, we have needed additional space for storing e.g., children’s things, furniture, and various things. Each time we were looking for a room/place for the things we were surprised that it was either expensive, openings hours were not suitable, or the security was not as we wanted. As a result of that, we created a place in which compromises were not made. We wish to offer the market the cheapest storing room in which the security is on top and flexibility to all customer types is available. "</string>
+    <string name="HvemErVi">Who are we?</string>
+    <string name="TelefonNummer">Phone number: +45 20 78 12 18</string>
+    <string name="EmailKontakt">Email: info@billigtlager.dk</string>
+    <string name="kontaktInformationer">Contact informations:</string>
+    <string name="Send">Send</string>
+    <string name="Dør1">Door 1</string>
+    <string name="Dør2">Door 2</string>
+    <string name="Dør3">Door 3</string>
+    <string name="Dør4">Door 4</string>
+    <string name="DørBesked">Push one of the following buttons to open the relevant door</string>
+    <string name="IntroTekst">"Flexible, frost free, and secure storage "</string>
+    <string name="ByensBilligste">Cheapest in town</string>
+    <string name="Adgang">Access 24/7</string>
+    <string name="Overvågning">Surveillance</string>
+    <string name="Opvarmet">Heated</string>
+    <string name="VoresPriser">Prices the first three months are 99 DKK per m2, afterwards the price is 119 DKK per m2.</string>
+    <string name="RumInfo">Rooms vary from 3 m2 to 19.8 m2</string>
+    <string name="Priser">Price information:</string>
+    <string name="PrisKnap">Book storageroom</string>
+    <string name="Adresse">Address: Militærsvinget 8A, 4700 Næstved</string>
+    <string name="Oversigtskort">Overview map</string>
+    <string name="OversigtsKortInfo">This is a overview map of the warehouse and the storage rooms</string>
+    <string name="BookRumBesked">Billigtlager makes it possible for you to book storage room in many sizes. Below, you can browse the different rooms, which you can rent.</string>
+    <string name="Rum3_4">Room size 3-4 m2</string>
+    <string name="Rum5_6">Room size 5-6 m2</string>
+    <string name="Rum7_8">Room size 7-8 m2</string>
+    <string name="Rum9_10">Room size 9-10 m2</string>
+    <string name="rum15_20">Room size 15-20 m2</string>
+</resources>
