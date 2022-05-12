@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.open_door);
                 break;
             case R.id.contact_page:
-                setContentView(R.layout.contact_page);
+                Intent i = new Intent(this, ContactActivity.class);
+                startActivity(i);
                 break;
             case R.id.book_room:
                 setContentView(R.layout.book_room);

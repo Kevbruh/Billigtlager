@@ -51,7 +51,7 @@ public class ContactActivity extends AppCompatActivity {
             case R.id.contact_page:
                 Intent i = new Intent(this, ContactActivity.class);
                 startActivity(i);
-                return true;
+                break;
             case R.id.book_room:
                 setContentView(R.layout.book_room);
                 break;
