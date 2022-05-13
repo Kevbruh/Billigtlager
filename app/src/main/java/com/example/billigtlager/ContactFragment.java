@@ -1,6 +1,7 @@
 package com.example.billigtlager;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,20 +13,33 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 
 public class ContactFragment extends Fragment {
     EditText etSubject, etMessage, etPhone, etName;
 
     Button send;
 
+    FloatingActionButton call;
+
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         setHasOptionsMenu(true);
         View Fragmentcontact = inflater.inflate(R.layout.fragment_contact, container, false);
+        // EditText
         etSubject = (EditText) Fragmentcontact.findViewById(R.id.ET_subject);
         etMessage = (EditText) Fragmentcontact.findViewById(R.id.ET_message);
         etPhone = (EditText) Fragmentcontact.findViewById(R.id.ET_phone);
         etName = (EditText) Fragmentcontact.findViewById(R.id.ET_name);
+        //Button
         send = (Button) Fragmentcontact.findViewById(R.id.bt_send);
+        //FAB
+        call = (FloatingActionButton) Fragmentcontact.findViewById(R.id.FAB_dial);
+
+        call.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:20781218"));
+            startActivity(intent);
+        });
 
         send.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_SEND);
