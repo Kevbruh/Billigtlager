@@ -13,7 +13,7 @@ public class EmailFunction extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_page);
+        setContentView(R.layout.fragment_contact);
 
         Button sendEmail = findViewById(R.id.bt_send);
 
