@@ -25,7 +25,7 @@
     <string name="TelefonNummer">Telefonnummer: +45 20 78 12 18</string>
     <string name="EmailKontakt">Email: info@billigtlager.dk</string>
     <string name="kontaktInformationer">Kontakt informationer:</string>
-    <string name="DørBesked">Tryk på en af følgende knapper for at åbne den pågældende dør</string>
+    <string name="DørBesked">Tryk på en af følgende knapper for at åbne den pågældende dør til lageret</string>
     <string name="IntroTekst">Fleksibel, frostfri og sikker opbevaring</string>
     <string name="ByensBilligste">Byens billigste</string>
     <string name="Adgang">Adgang 24/7</string>
