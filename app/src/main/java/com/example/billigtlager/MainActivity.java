@@ -25,8 +25,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    EditText etTo, etSubject, etMessage, etPhone, etName;
-    Button btSend, door1, door2, door3, door4;
+    EditText etTo;
+    Button door1, door2, door3, door4;
 
     DoorSystem doorSystem;
 
@@ -46,10 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         //EditText
         etTo = findViewById(R.id.ET_to);
-        etSubject = findViewById(R.id.ET_subject);
-        etMessage = findViewById(R.id.ET_message);
-        etPhone = findViewById(R.id.ET_phone);
-        etName = findViewById(R.id.ET_name);
 
         //button
         btSend = findViewById(R.id.bt_send);
