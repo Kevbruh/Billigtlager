@@ -25,7 +25,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    Button door1, door2, door3, door4;
 
     DoorSystem doorSystem;
 
@@ -42,15 +41,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
         setupNavigation();
-
-        //button
-        door1 = findViewById(R.id.Door1);
-        door2 = findViewById(R.id.Door2);
-        door3 = findViewById(R.id.Door3);
-        door4 = findViewById(R.id.Door4);
-
-        //FAB
-        fabDialling = findViewById(R.id.FAB_dial);
 
         //Toolbar
         toolbar = findViewById(R.id.toolbar);
@@ -95,11 +85,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
-    }
-
-
-    public void openDoors(View view) {
-        doorSystem.openDoorsInNaestved(view);
     }
 
     public void Main_menu(Menu menu) { }
