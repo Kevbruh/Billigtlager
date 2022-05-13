@@ -19,7 +19,7 @@ public class EmailFunction extends AppCompatActivity {
         setContentView(R.layout.fragment_contact);
 
         //EditText find id
-        etSubject = findViewById(R.id.ET_subject);
+        etSubject = (EditText) findViewById(R.id.ET_subject);
         etMessage = findViewById(R.id.ET_message);
         etPhone = findViewById(R.id.ET_phone);
         etName = findViewById(R.id.ET_name);
