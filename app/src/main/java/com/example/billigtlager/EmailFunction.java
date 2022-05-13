@@ -21,7 +21,8 @@ public class EmailFunction extends AppCompatActivity {
         //EditText find id
         etSubject = findViewById(R.id.ET_subject);
         etMessage = findViewById(R.id.ET_message);
-        etPhone = findViewById(R.id.ET_name);
+        etPhone = findViewById(R.id.ET_phone);
+        etName = findViewById(R.id.ET_name);
 
         // Button find id
         sendEmail = findViewById(R.id.bt_send);
@@ -34,7 +35,7 @@ public class EmailFunction extends AppCompatActivity {
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@billigtlager.dk"});
                 intent.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
                 intent.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
-                intent.putExtra(Intent.EXTRA_TEXT, etName.getText().toString());
+                intent.putExtra(Intent.EXTRA_TEXT, "Vh. " + etName.getText().toString());
                 intent.putExtra(Intent.EXTRA_TEXT, etPhone.getText().toString());
                 startActivity(intent);
             }

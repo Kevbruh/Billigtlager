@@ -25,7 +25,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    EditText etTo;
     Button door1, door2, door3, door4;
 
     DoorSystem doorSystem;
@@ -44,11 +43,7 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         setupNavigation();
 
-        //EditText
-        etTo = findViewById(R.id.ET_to);
-
         //button
-        btSend = findViewById(R.id.bt_send);
         door1 = findViewById(R.id.Door1);
         door2 = findViewById(R.id.Door2);
         door3 = findViewById(R.id.Door3);
