@@ -26,10 +26,7 @@ public class ContactFragment extends Fragment {
         etPhone = (EditText) Fragmentcontact.findViewById(R.id.ET_phone);
         etName = (EditText) Fragmentcontact.findViewById(R.id.ET_name);
         send = (Button) Fragmentcontact.findViewById(R.id.bt_send);
-        return Fragmentcontact;
-    }
 
-    public void sendEmail(View view){
         send.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
@@ -37,8 +34,11 @@ public class ContactFragment extends Fragment {
             intent.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
             intent.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
 
-        startActivity(intent);
+            startActivity(intent);
         });
+
+        return Fragmentcontact;
     }
+
 
 }
