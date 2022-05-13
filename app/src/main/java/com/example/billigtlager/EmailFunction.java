@@ -29,14 +29,12 @@ public class EmailFunction extends AppCompatActivity {
 
         sendEmail.setOnClickListener(new View.OnClickListener() {
             @Override
-                    public void onClick(View v) {
+            public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@billigtlager.dk"});
                 intent.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
                 intent.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
-                intent.putExtra(Intent.EXTRA_TEXT, "Vh. " + etName.getText().toString());
-                intent.putExtra(Intent.EXTRA_TEXT, etPhone.getText().toString());
                 startActivity(intent);
             }
         });
