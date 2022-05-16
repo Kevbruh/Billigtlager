@@ -28,24 +28,28 @@ public class DepotFragment extends Fragment {
         door4 = (Button) FragmentDepot.findViewById(R.id.Door4);
 
         door1.setOnClickListener(v -> {
-            Intent textIntent = new Intent(Intent.ACTION_SEND);
-                textIntent.setData(Uri.parse("D1" +24977234));
-                Toast.makeText(getActivity(),"Dør 1 er nu åben", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"Tryk på send og dør 1 vil låse op", Toast.LENGTH_LONG).show();
+            Intent textIntent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", "24977234", null));
+                textIntent.putExtra("sms_body", "D1");
+                startActivity(textIntent);
         });
         door2.setOnClickListener(v -> {
-            Intent textIntent = new Intent(Intent.ACTION_SEND);
-            textIntent.setData(Uri.parse("D2" +24977234));
-            Toast.makeText(getActivity(),"Dør 2 er nu åben", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"Tryk på send og dør 2 vil låse op", Toast.LENGTH_LONG).show();
+            Intent textIntent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", "24977234", null));
+            textIntent.putExtra("sms_body", "D2");
+            startActivity(textIntent);
         });
         door3.setOnClickListener(v -> {
-            Intent textIntent = new Intent(Intent.ACTION_SEND);
-            textIntent.setData(Uri.parse("D1" +24977234));
-            Toast.makeText(getActivity(),"Dør 3 er nu åben", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"Tryk på send og dør 3 vil låse op", Toast.LENGTH_LONG).show();
+            Intent textIntent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", "24977234", null));
+            textIntent.putExtra("sms_body", "D3");
+            startActivity(textIntent);
         });
         door4.setOnClickListener(v -> {
-            Intent textIntent = new Intent(Intent.ACTION_SEND);
-            textIntent.setData(Uri.parse("D4" +24977234));
-            Toast.makeText(getActivity(),"Dør 1 er nu åben", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"Tryk på send og dør 4 vil låse op", Toast.LENGTH_LONG).show();
+            Intent textIntent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", "24977234", null));
+            textIntent.putExtra("sms_body", "D4");
+            startActivity(textIntent);
         });
 
         return FragmentDepot;
