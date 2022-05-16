@@ -15,15 +15,6 @@
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/book_storageroom.xml" value="0.28802083333333334" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/contact_page.xml" value="0.29128205128205126" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/door_opener.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_book_depot.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_book_room.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_contact.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_depot.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_home.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_profile.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room15x20.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room3x4.xml" value="0.3046875" />
-        <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room5x6.xml" value="0.3046875" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/front_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/k.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/JUSSI/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/open_door.xml" value="0.28802083333333334" />
@@ -40,14 +31,18 @@
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_contact.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_depot.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_home.xml" value="0.2546875" />
-        <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_profile.xml" value="0.2546875" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_login.xml" value="0.2546875" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room15x20.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room3x4.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room5x6.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room7x8.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_room9x10.xml" value="0.2546875" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/fragment_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/front_page.xml" value="0.2546875" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/login_activity.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/open_door.xml" value="0.2546875" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/register_activity.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/rum15_20.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/rum3_4.xml" value="0.2546875" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/Billigtlager/app/src/main/res/layout/rum5_6.xml" value="0.2546875" />
