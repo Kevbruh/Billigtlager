@@ -21,48 +21,49 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextInputEditText etSignUpEmail;
-    TextInputEditText etSignUpPassword;
-    Button btnLogin;
-    TextView tvRegisterHereLabel;
+    TextInputEditText loginEmail;
+    TextInputEditText loginPassword;
+    Button buttonLogin;
+    TextView labelRegisterHere;
 
+    //Firebase authentication
+    FirebaseAuth firebaseAuthentication = FirebaseAuth.getInstance();
 
-    FirebaseAuth mAuth = FirebaseAuth.getInstance();
-
+    //Creating scene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        etSignUpEmail = findViewById(R.id.signUpEmail);
-        etSignUpPassword = findViewById(R.id.signUpPass);
-        btnLogin = findViewById(R.id.btnRegister);
-        tvRegisterHereLabel = findViewById(R.id.tvLoginHere);
+        firebaseAuthentication = FirebaseAuth.getInstance();
 
-        mAuth = FirebaseAuth.getInstance();
+        //Pulling interactive fields/buttons from activity
+        loginEmail = findViewById(R.id.LoginEmail);
+        loginPassword = findViewById(R.id.LoginPass);
+        buttonLogin = findViewById(R.id.btnLogin);
+        labelRegisterHere = findViewById(R.id.LabelRegisterHere);
 
-        btnLogin.setOnClickListener(view -> {
+        buttonLogin.setOnClickListener(view -> {
             loginUser();
         });
-        tvRegisterHereLabel.setOnClickListener(view -> {
+        labelRegisterHere.setOnClickListener(view -> {
             startActivity(new Intent(this, RegisterActivity.class));
         });
-
-
     }
 
+    //Login logic
     public void loginUser() {
-        String email = etSignUpEmail.getText().toString();
-        String password = etSignUpPassword.getText().toString();
+        String email = loginEmail.getText().toString();
+        String password = loginPassword.getText().toString();
 
         if (TextUtils.isEmpty(email)) {
-            etSignUpEmail.setError("Email cannot be empty");
-            etSignUpEmail.requestFocus();
+            loginEmail.setError("Email cannot be empty");
+            loginEmail.requestFocus();
         } else if (TextUtils.isEmpty(password)) {
-            etSignUpPassword.setError("Password cannot be empty");
-            etSignUpPassword.requestFocus();
+            loginPassword.setError("Password cannot be empty");
+            loginPassword.requestFocus();
         } else {
-            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            firebaseAuthentication.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
@@ -76,10 +77,11 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser user = mAuth.getCurrentUser();
+        FirebaseUser user = firebaseAuthentication.getCurrentUser();
         if (user == null){
             //  startActivity(new Intent(this, LoginActivity.class));
         }

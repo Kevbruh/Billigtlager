@@ -21,33 +21,39 @@ public class RegisterActivity extends AppCompatActivity {
     TextInputEditText signUpEmail;
     TextInputEditText signUpPass;
     TextInputEditText signUpConfirmPass;
-    Button btnRegister;
-    TextView tvLoginHere;
+    Button buttonRegister;
+    TextView labelLoginHere;
 
-    FirebaseAuth mAuth;
+    //Firebase authentication
+    FirebaseAuth firebaseAuthentication;
 
+    //Creating scene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_activity);
 
+        firebaseAuthentication = FirebaseAuth.getInstance();
+
+        //Pulling interactive fields/buttons from activity
         signUpEmail = findViewById(R.id.signUpEmail);
         signUpPass = findViewById(R.id.signUpPass);
         signUpConfirmPass = findViewById(R.id.signUpConfirmPass);
-        btnRegister = findViewById(R.id.btnRegister);
-        tvLoginHere = findViewById(R.id.tvLoginHere);
+        buttonRegister = findViewById(R.id.btnRegister);
+        labelLoginHere = findViewById(R.id.LabelLoginHere);
 
-        mAuth = FirebaseAuth.getInstance();
 
-        btnRegister.setOnClickListener(view ->{
+        buttonRegister.setOnClickListener(view ->{
             createUser();
         });
 
-        tvLoginHere.setOnClickListener(view ->{
+        labelLoginHere.setOnClickListener(view ->{
             startActivity(new Intent(this, LoginActivity.class));
         });
     }
 
+
+    //Create user logic
     private void createUser(){
         String email = signUpEmail.getText().toString();
         String password = signUpPass.getText().toString();
@@ -60,13 +66,13 @@ public class RegisterActivity extends AppCompatActivity {
             signUpPass.setError("Password cannot be empty");
             signUpPass.requestFocus();
         }else if (TextUtils.isEmpty(confirmPassword)) {
-            signUpConfirmPass.setError("Confirm password is required");
+            signUpConfirmPass.setError("Confirm password is required!");
             signUpConfirmPass.requestFocus();
         } else if (!password.equals(confirmPassword)) {
-            signUpConfirmPass.setError("Passwords are not matching");
+            signUpConfirmPass.setError("Passwords are not matching!");
             signUpConfirmPass.requestFocus();
         }else{
-            mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            firebaseAuthentication.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){

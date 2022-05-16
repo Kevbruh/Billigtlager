@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     android:background="#b5cef5">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,12 +15,21 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp">
 
+        <ImageView
+            android:id="@+id/BilligtLagerBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:srcCompat="@drawable/billigt_lager_banner" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:gravity="center_horizontal"
             android:layout_marginVertical="16dp"/>
 
@@ -30,10 +40,13 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signUpEmail"
+                android:id="@+id/LoginEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:hint="Email"
+                android:background="@drawable/bg_textfield_round"
                 android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,19 +58,26 @@
             android:layout_marginTop="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/signUpPass"
+                android:id="@+id/LoginPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:hint="Password"
+                android:background="@drawable/bg_textfield_round"
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:textSize="18sp"
             android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
             android:text="Login"/>
 
         <LinearLayout
@@ -74,17 +94,16 @@
                 android:textSize="16sp"/>
 
             <TextView
-                android:id="@+id/tvLoginHere"
+                android:id="@+id/LabelRegisterHere"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:text="Register here!"
+                android:text="Sign up here!"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
