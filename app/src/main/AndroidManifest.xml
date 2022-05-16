@@ -9,9 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Billigtlager">
         <activity
-            android:name=".AddAvailableRoomActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

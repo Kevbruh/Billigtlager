@@ -60,4 +60,14 @@
         android:name="com.example.billigtlager.Room9x10Fragment"
         android:label="9x10 m2"
         tools:layout="@layout/fragment_room9x10" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.billigtlager.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.billigtlager.SignUpFragment"
+        android:label="Sign up"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>
