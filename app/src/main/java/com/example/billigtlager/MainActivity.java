@@ -26,10 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
 
-    DoorSystem doorSystem;
-
-    FloatingActionButton fabDialling;
-
     NavController navController;
     AppBarConfiguration appBarConfiguration;
     DrawerLayout drawerLayout;
@@ -87,5 +83,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
     }
 
+    //skal det her væk?
     public void Main_menu(Menu menu) { }
     }

@@ -27,14 +27,14 @@ public class ContactFragment extends Fragment {
         setHasOptionsMenu(true);
         View Fragmentcontact = inflater.inflate(R.layout.fragment_contact, container, false);
         // EditText
-        etSubject = (EditText) Fragmentcontact.findViewById(R.id.ET_subject);
-        etMessage = (EditText) Fragmentcontact.findViewById(R.id.ET_message);
-        etPhone = (EditText) Fragmentcontact.findViewById(R.id.ET_phone);
-        etName = (EditText) Fragmentcontact.findViewById(R.id.ET_name);
+        etSubject = Fragmentcontact.findViewById(R.id.ET_subject);
+        etMessage = Fragmentcontact.findViewById(R.id.ET_message);
+        etPhone = Fragmentcontact.findViewById(R.id.ET_phone);
+        etName = Fragmentcontact.findViewById(R.id.ET_name);
         //Button
-        send = (Button) Fragmentcontact.findViewById(R.id.bt_send);
+        send = Fragmentcontact.findViewById(R.id.bt_send);
         //FAB
-        call = (FloatingActionButton) Fragmentcontact.findViewById(R.id.FAB_dial);
+        call = Fragmentcontact.findViewById(R.id.FAB_dial);
 
         call.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:20781218"));
