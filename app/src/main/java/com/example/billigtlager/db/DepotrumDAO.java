@@ -12,10 +12,12 @@ import java.util.List;
 public interface DepotrumDAO {
 
    @Query("SELECT * FROM depotrum")
-    List<Depotrum> getAllDepotrum();
+   public List<Depotrum> getAllDepotrum();
 
-    @Insert
-    void insertDepotrum(Depotrum... depotrums);
+
+   @Insert
+   public void addDepotrum(Depotrum depotrum);
+
 
     @Delete
     void delete(Depotrum depotrum);

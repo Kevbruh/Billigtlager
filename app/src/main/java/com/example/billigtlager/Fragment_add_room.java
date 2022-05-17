@@ -1,11 +1,11 @@
 package com.example.billigtlager;
 
+import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,17 +13,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.billigtlager.db.AppDatabase;
 import com.example.billigtlager.db.Depotrum;
 
-public class AddAvailableRoomActivity extends Fragment {
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link Fragment_add_room#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class Fragment_add_room extends Fragment {
 
     private EditText RumNrInput, KM2Input, PriceInput;
     private Button SaveButton;
 
 
-    public AddAvailableRoomActivity() {
+    public Fragment_add_room() {
 
 
     }
@@ -59,33 +62,3 @@ public class AddAvailableRoomActivity extends Fragment {
 
     }
 }
-
-
-    /*  @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_available_room);
-
-        EditText RumNrInput = findViewById(R.id.RumNrInput);
-        EditText KM2Input = findViewById(R.id.KM2Input);
-        EditText PriceInput = findViewById(R.id.PriceInput);
-        Button saveButton = findViewById(R.id.saveButton);
-        saveButton.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveNewRoom(RumNrInput.getText().toString(), KM2Input.getText().toString(), PriceInput.getText().toString());
-            }
-        }));
-
-
-        }
-    private void saveNewRoom(String rumNr, String km2, String price){
-        AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
-        Depotrum depotrum = new Depotrum();
-        depotrum.rumNr = rumNr;
-        depotrum.km2 = km2;
-        depotrum.price = price;
-        db.depotrumDAO().insertDepotrum(depotrum);
-
-        finish();
-*/

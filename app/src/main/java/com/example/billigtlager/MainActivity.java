@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -12,6 +14,8 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,8 +32,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    static FragmentManager fragmentManager;
+    static AppDatabase appDatabase;
 
-    private DepotrumListAdapter depotrumListAdapter;
+  //  private DepotrumListAdapter depotrumListAdapter;
 
     Toolbar toolbar;
 
@@ -48,6 +54,17 @@ public class MainActivity extends AppCompatActivity {
         //Toolbar
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //Data base
+        fragmentManager = getSupportFragmentManager();
+            appDatabase = Room.databaseBuilder(getApplicationContext(),AppDatabase.class, "Mydb").allowMainThreadQueries().build();
+        if (findViewById(R.id.Container) != null) {
+            if (savedInstanceState != null){
+                return;
+            }
+            fragmentManager.beginTransaction().add(R.id.Container, new AddAvailableRoomActivity(), null).commit();
+
+        }
 
 /*
 

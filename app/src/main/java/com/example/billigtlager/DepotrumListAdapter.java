@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.billigtlager.db.Depotrum;
@@ -15,10 +16,9 @@ import java.util.List;
 
 public class DepotrumListAdapter extends RecyclerView.Adapter<DepotrumListAdapter.MyViewHolder> {
 
-    private Context context;
-    private List<Depotrum> depotrumList;
-    public DepotrumListAdapter(Context context){
-        this.context = context;
+    List<Depotrum> depotrumList;
+    public DepotrumListAdapter(List<Depotrum> list){
+        this.depotrumList = list;
     }
 
     public void setDepotrumList(List<Depotrum> depotrumList) {
@@ -30,14 +30,14 @@ public class DepotrumListAdapter extends RecyclerView.Adapter<DepotrumListAdapte
     @NonNull
     @Override
     public DepotrumListAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.recycler_row, parent, false);
-
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_room3x4, parent, false);
+            DepotrumListAdapter.MyViewHolder myViewHolder = new MyViewHolder(view);
     return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull DepotrumListAdapter.MyViewHolder holder, int position) {
-        holder.tvRumNr.setText(this.depotrumList.get(position).rumNr);
+        holder.tvRumNr.setText(this.depotrumList.get(position).rumNr); // hold øje med denne
         holder.tvKM2.setText(this.depotrumList.get(position).km2);
         holder.tvPrice.setText(this.depotrumList.get(position).price);
     }
@@ -53,7 +53,7 @@ public class DepotrumListAdapter extends RecyclerView.Adapter<DepotrumListAdapte
         TextView tvKM2;
         TextView tvPrice;
 
-        public MyViewHolder(View view){
+        public MyViewHolder(@NonNull View view){
             super(view);
             TextView tvRumNr = view.findViewById(R.id.tvRumNr);
             TextView tvKM2 = view.findViewById(R.id.tvKM2);
