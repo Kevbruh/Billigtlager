@@ -17,6 +17,7 @@ public class Depotrum {
     @ColumnInfo(name = "KM2")
     public String km2;
 
+
     @ColumnInfo(name = "Price")
     public String price;
 

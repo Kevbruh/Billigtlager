@@ -23,7 +23,7 @@
     <EditText android:id="@+id/KM2Input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter KM2"
+        android:hint="Enter m2"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@+id/RumNrInput"

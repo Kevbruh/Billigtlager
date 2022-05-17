@@ -36,7 +36,7 @@ public class AddAvailableRoomActivity extends AppCompatActivity {
         depotrum.rumNr = rumNr;
         depotrum.km2 = km2;
         depotrum.price = price;
-        db.depotrumDAO().insertDepotrum();
+        db.depotrumDAO().insertDepotrum(depotrum);
 
         finish();
 

@@ -21,13 +21,11 @@ public class DepotrumListAdapter extends RecyclerView.Adapter<DepotrumListAdapte
         this.context = context;
     }
 
-
     public void setDepotrumList(List<Depotrum> depotrumList) {
-    this.depotrumList = depotrumList;
-    notifyDataSetChanged();
+         this.depotrumList = depotrumList;
+         notifyDataSetChanged();
 
     }
-
 
     @NonNull
     @Override
@@ -46,6 +44,7 @@ public class DepotrumListAdapter extends RecyclerView.Adapter<DepotrumListAdapte
 
     @Override
     public int getItemCount() {
+
         return this.depotrumList.size();
     }
 

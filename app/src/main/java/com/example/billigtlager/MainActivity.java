@@ -1,5 +1,6 @@
 package com.example.billigtlager;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -8,21 +9,27 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-
-
+import com.example.billigtlager.db.AppDatabase;
+import com.example.billigtlager.db.Depotrum;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private DepotrumListAdapter depotrumListAdapter;
 
     Toolbar toolbar;
 
@@ -41,7 +48,49 @@ public class MainActivity extends AppCompatActivity {
         //Toolbar
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+/*
+
+          Button addAvailableRoomButton = findViewById(R.id.addAvailableRoomButton);
+         addAvailableRoomButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+         startActivityForResult(new Intent(MainActivity.this, AddAvailableRoomActivity.class), 100);
+           }
+          });
+
+         initRecyclerView();
+            loadDepotrumlist();
+       }
+
+       private void initRecyclerView() {
+          RecyclerView recyclerView = findViewById(R.id.recyclerView);
+         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+         recyclerView.addItemDecoration(dividerItemDecoration);
+         depotrumListAdapter = new DepotrumListAdapter(this);
+         recyclerView.setAdapter(depotrumListAdapter);
+          }
+
+         private void loadDepotrumlist() {
+        AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
+        List<Depotrum> depotrumList = db.depotrumDAO().getAllDepotrum();
+         depotrumListAdapter.setDepotrumList(depotrumList);
+          }
+
+         @Override
+         protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+         if(requestCode == 100) {
+            loadDepotrumlist();
+               }
+
+               super.onActivityResult(requestCode, resultCode, data);
+           }
+*/
     }
+
+
 
     private void initViews() {
         drawerLayout = findViewById(R.id.drawer_layout);
